@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prototypes</title>
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --border: #dfe1e6;
+    --text: #172b4d;
+    --text-muted: #5e6c84;
+    --primary: #0052cc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 24px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+  }
+  .intro {
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+  ul.prototype-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  ul.prototype-list a {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.12s ease, transform 0.12s ease;
+  }
+  ul.prototype-list a:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .desc {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  footer {
+    margin-top: 48px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prototypes</h1>
+    <p class="intro">Lightweight HTML prototypes for product feature explorations.</p>
+
+    <ul class="prototype-list">
+      <li>
+        <a href="./sms-test-indicator/">
+          <div class="title">SMS Test Indicator</div>
+          <div class="desc">Send-preview modal with a toggle to inject a <code>[TEST]</code> indicator into SMS/MMS/RCS previews. Live phone preview reflects start/end position.</div>
+        </a>
+      </li>
+    </ul>
+
+    <footer>Source: <a href="https://github.com/lunasc24/prototypes">github.com/lunasc24/prototypes</a></footer>
+  </div>
+</body>
+</html>
